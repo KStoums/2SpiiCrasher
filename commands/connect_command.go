@@ -26,7 +26,7 @@ var connectCommand = &cobra.Command{
 			log.Fatalln(err)
 		}
 
-		if mountBot > 1000 || mountBot == 0 {
+		if mountBot > 20000 || mountBot == 0 {
 			log.Fatalln(messages.MountBotTooHigh)
 		}
 
